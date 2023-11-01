@@ -23,7 +23,7 @@ template Num2Bits(n) {
 // Also borrowed from circom lib: https://github.com/iden3/
 //
 // Sets signal out to 1 if in[0] < in[1] and to 0 otherwise
-// Warning: It assumes that both signals of in
+// Warning: It assumes that both signals of in fit in n bits.
 template LessThan(n) {
   assert(n <= 252);
   signal input in[2];
