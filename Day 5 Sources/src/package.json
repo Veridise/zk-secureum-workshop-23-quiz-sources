@@ -1,0 +1,71 @@
+{
+    "name": "semaphore-protocol",
+    "description": "A zero-knowledge protocol for anonymous signalling on Ethereum.",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "compile": "yarn compile:contracts",
+        "compile:contracts": "yarn workspace contracts compile",
+        "test": "yarn test:contracts",
+        "test:contracts": "yarn workspace contracts test"
+    },
+    "keywords": [
+        "ethereum",
+        "semaphore",
+        "solidity",
+        "circom",
+        "javascript",
+        "typescript",
+        "zero-knowledge",
+        "zk-snarks",
+        "zero-knowledge-proofs",
+        "proof-of-membership",
+        "monorepo"
+    ],
+    "workspaces": [
+        "packages/*"
+    ],
+    "packageManager": "yarn@3.2.1",
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/preset-env": "^7.16.8",
+        "@babel/preset-typescript": "^7.17.12",
+        "@commitlint/cli": "^16.0.2",
+        "@commitlint/config-conventional": "^16.0.0",
+        "@rollup/plugin-typescript": "^8.3.0",
+        "@types/download": "^8.0.1",
+        "@types/glob": "^7.2.0",
+        "@types/jest": "^27.4.0",
+        "@types/node": "^17.0.9",
+        "@types/rimraf": "^3.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.9.1",
+        "@typescript-eslint/parser": "^5.9.1",
+        "babel-jest": "^27.4.6",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "dotenv": "^16.0.2",
+        "eslint": "^8.2.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-config-airbnb-typescript": "^16.1.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-jest": "^25.7.0",
+        "jest": "^27.4.1",
+        "jest-config": "^27.4.7",
+        "lint-staged": "^12.1.7",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.64.0",
+        "ts-node": "^10.4.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.7.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "dependencies": {
+        "circomlib": "^2.0.5"
+    }
+}
